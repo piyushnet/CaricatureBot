@@ -16,3 +16,20 @@ void BASE_init()
 	COPCTL = 0x40; //COP off; RTI and COP stopped in BDM-mode
 
 }
+
+void delay(int msdelay_time)
+{
+	int i = 0;
+	
+	for (i = 0; i < msdelay_time; i++)
+	{
+
+	asm {
+			ldd #$2EE00; //12000 in counter to decrement
+		loopi:
+			nop;
+			dbne d,loopi;
+		}
+	}
+
+}

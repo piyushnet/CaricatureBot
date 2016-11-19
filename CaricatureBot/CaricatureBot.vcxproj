@@ -131,6 +131,9 @@
     <ClInclude Include="Sources\NCK\Interpolator\Interpolator.h" />
     <ClInclude Include="Sources\NCK\Interpretor\Interpretor.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="CaricatureBot.mcp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

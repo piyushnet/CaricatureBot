@@ -31,6 +31,8 @@ void initialize()
 void loop()
 {
 
+	char byte = 0b01110001;
+	shiftByteOut(byte);
 
 
 }

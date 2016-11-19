@@ -9,5 +9,17 @@ void SPI_init()
 
 }
 
+void shiftByteOut(char byte)
+{
+	while (SPISR_SPTEF == 0);
+	SPIDR = byte;
+	delay(3);
+
+}
+
+
+
+
+
 
 
