@@ -11,8 +11,10 @@
 #ifndef _TIM_H
 #define _TIM_H
 
-// Constants & Definitions
+#include "../base.h"
 
+
+// Constants & Definitions
 
 // Function Definitions
 void TIM_init();

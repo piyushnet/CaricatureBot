@@ -8,15 +8,23 @@
 *
 */
 
-#include<hidef.h>				/* Common Defines and Macros */
-#include"derivative.h"			/* Derivative-specific Definitions */
+#ifndef __HC12__
+#define __HC12__
+#endif
+
 
 #ifndef _BASE_H
 #define _BASE_H
 
 
 
+
+#include<hidef.h>				/* Common Defines and Macros */
+#include"../derivative.h"
+
+
 // Definitions
+
 
 
 // Function Definitions

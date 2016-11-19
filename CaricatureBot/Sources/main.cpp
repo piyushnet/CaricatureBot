@@ -9,6 +9,7 @@
 #include"NCK/Interpolator/Interpolator.h"
 #include"NCK/Interpretor/Interpretor.h"
 
+#include<hidef.h>
 
 
 /* System Initializations  */
@@ -16,13 +17,14 @@ void initialize()
 {
 	//Sub-system initializations
 
-	TIM_init();
+
 	SPI_init();
+	TIM_init();
 	UART_init();
 
-	Interpretor_init();
 	Interpolator_init();
-	
+	Interpretor_init();
+
 }
 
 
@@ -38,16 +40,22 @@ void loop()
 /* please make sure that you never leave main */
 void main(void)
 {
+	// Disable Interrupts for Initialization
+	DisableInterrupts;
+
 	// Initialize all sub-systems
 	initialize();
-	
-	// Enable Interrupts
+
+	// Enable back Interrupts
 	EnableInterrupts;
 
 	// Loop forever
-	for (;;) {
+	for (;;)
+	{
 
-		_FEED_COP(); /* feeds the dog */
+		//_FEED_COP(); /* feeds the dog */
+		//COP off; RTI and COP stopped in BDM-mode
+
 		loop();
 
 	}

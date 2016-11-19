@@ -11,6 +11,9 @@
 #ifndef _INTERPRETOR_H
 #define _INTERPRETOR_H
 
+#include "../../Drivers/base.h"
+
+
 // Constants & Definitions
 
 

@@ -11,11 +11,13 @@
 #ifndef _SPI_H
 #define _SPI_H
 
+#include "../base.h"
+
+
 // Constants & Definitions
 
 
 // Function Definitions
 void SPI_init();
-
 
 #endif

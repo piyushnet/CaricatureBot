@@ -15,22 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sources\Drivers\SPI\SPI.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\Drivers\UART\UART.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\NCK\Interpolator\Interpolator.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\NCK\Interpretor\Interpretor.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sources\Drivers\TIM\TIM.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Start12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Drivers\SPI\SPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Drivers\TIM\TIM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Drivers\UART\UART.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\NCK\Interpolator\Interpolator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\NCK\Interpretor\Interpretor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Drivers\base.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
