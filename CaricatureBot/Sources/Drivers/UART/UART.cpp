@@ -12,3 +12,31 @@ void UART_init()
 	PORTB = 0x10; //assert DTR pin on COM port
 
 }
+
+/*
+***********************************************************************
+Character I/O Library Routines for 9S12C32 (for debugging only)
+***********************************************************************
+Name:         inchar
+Description:  inputs ASCII character from SCI serial port and returns it
+Example:      char ch1 = inchar();
+***********************************************************************
+*/
+char UART_outChar(void) {
+	/* receives character from the terminal channel */
+	while (!(SCISR1 & 0x20)); /* wait for input */
+	return SCIDRL;
+}
+
+/*
+***********************************************************************
+Name:         outchar
+Description:  outputs ASCII character x to SCI serial port
+Example:      outchar('x');
+***********************************************************************
+*/
+void UART_outChar(char x) {
+	/* sends a character to the terminal channel */
+	while (!(SCISR1 & 0x80));  /* wait for output buffer empty */
+	SCIDRL = x;
+}

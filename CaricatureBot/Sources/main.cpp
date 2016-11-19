@@ -17,7 +17,7 @@ void initialize()
 {
 	//Sub-system initializations
 
-
+	BASE_init();
 	SPI_init();
 	TIM_init();
 	UART_init();
@@ -30,9 +30,12 @@ void initialize()
 
 void loop()
 {
+	// Test  UART
+	UART_outChar('H');
 
-	char byte = 0b01110001;
-	shiftByteOut(byte);
+
+	//char byte = 0b01110001;
+	//shiftByteOut(byte);
 
 
 }
