@@ -15,8 +15,7 @@
 
 
 // Constants & Definitions
-
-
+ 
 // Function Definitions
 void Interpolator_init();
 
