@@ -31,11 +31,19 @@ void initialize()
 void loop()
 {
 	// Test  UART
-	UART_outChar('H');
+	//UART_outChar('H');
 
+	int Theta[4] = { 100,200,300,400 };
 
-	//char byte = 0b01110001;
-	//shiftByteOut(byte);
+	SPI_TX(Theta, 4);
+
+	delay(200);
+
+	//int i = 0;
+	//for (i = 0; i < 256; i++)
+	//{
+	//	delay(50);
+	//}
 
 
 }

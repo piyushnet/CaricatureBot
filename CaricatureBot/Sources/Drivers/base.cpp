@@ -25,7 +25,7 @@ void delay(int msdelay_time)
 	{
 
 	asm {
-			ldd #$2EE00; //12000 in counter to decrement
+			ldd #$2EE0; //12000 in counter to decrement
 		loopi:
 			nop;
 			dbne d,loopi;

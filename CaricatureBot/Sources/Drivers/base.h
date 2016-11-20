@@ -25,6 +25,7 @@
 
 // Function Definitions
 void BASE_init();
+void delay(int msdelay_time);
 
 
 #endif

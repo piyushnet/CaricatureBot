@@ -19,10 +19,10 @@
 
 // Function Definitions
 void SPI_init();
-void SPI_RX();
-void SPI_Tx();
+void SPI_RX(int data[], int size);
+void SPI_TX(int data[], int size);
 
-void shiftByteOut(char byte);
-void delay(int msdelay_time);
+void shiftByteOut(unsigned char byte);
+
 
 #endif
