@@ -15,9 +15,13 @@
 
 
 // Constants & Definitions
- 
+
 // Function Definitions
 void Interpolator_init();
+void LinearInterpolate(float EndX, float EndY, float EndZ, float Feed);
+void CircularInterpolateCW(float EndX, float EndY, float EndZ, float i, float j, float Feed);
+void CircularInterpolateCCW(float EndX, float EndY, float EndZ, float i, float j, float Feed);
+
 
 
 #endif
