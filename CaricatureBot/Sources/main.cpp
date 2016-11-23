@@ -33,9 +33,9 @@ void loop()
 	// Test  UART
 	//UART_outChar('H');
 
-	int Theta[4] = { 100,200,300,400 };
+	int Theta[5] = { 100,200,300,400, 500 };
 
-	SPI_TX(Theta, 4);
+	SPI_TX(Theta, 5);
 
 	delay(200);
 

@@ -16,6 +16,10 @@ void SPI_TX(int data[], int size)
 {
 	unsigned char* buff = (unsigned char*)data;
 
+	// Start of Tx
+	shiftByteOut(SOT_Preamble);
+	shiftByteOut(SOT_Preamble);
+
 	int i = 0;
 	while (size > 0)
 	{
@@ -29,6 +33,9 @@ void SPI_TX(int data[], int size)
 		size--;
 
 	}
+
+	// End of Tx
+	shiftByteOut(EOT_Preamble);
 
 }
 

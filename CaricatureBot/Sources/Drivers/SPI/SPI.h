@@ -15,7 +15,8 @@
 
 
 // Constants & Definitions
-
+#define SOT_Preamble 0b10101010
+#define EOT_Preamble 0b10101011
 
 // Function Definitions
 void SPI_init();
