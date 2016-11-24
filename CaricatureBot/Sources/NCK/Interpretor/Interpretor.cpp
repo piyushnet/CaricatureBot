@@ -13,7 +13,7 @@ void Interpretor_init()
 	_F = 0;
 }
 
-void Interpretor_parse(char* str)
+void Interpretor_parse(const char* str)
 {
 
 	// Parse the String

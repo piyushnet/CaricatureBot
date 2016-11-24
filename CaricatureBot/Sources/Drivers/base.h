@@ -19,6 +19,7 @@
 #include"../derivative.h"
 
 
+#define AxisCount 5
 // Definitions
 
 

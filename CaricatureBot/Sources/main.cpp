@@ -30,22 +30,19 @@ void initialize()
 
 void loop()
 {
-	// Test  UART
-	//UART_outChar('H');
+	
+	int theta[AxisCount] = { 512,512,512,0,0 };
+	SPI_TX(theta, AxisCount);
+	delay(10);
 
-	int Theta[5] = { 100,200,300,400, 500 };
-
-	SPI_TX(Theta, 5);
-
-	delay(200);
-
-	//int i = 0;
-	//for (i = 0; i < 256; i++)
-	//{
-	//	delay(50);
-	//}
-
-
+	for (int i = 500; i < 1000; i++)
+	{
+		
+		theta[3] = i;
+		SPI_TX(theta, AxisCount);
+		delay(10);
+	}
+	
 }
 
 

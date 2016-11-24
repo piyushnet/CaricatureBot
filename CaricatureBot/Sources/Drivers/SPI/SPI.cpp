@@ -21,17 +21,14 @@ void SPI_TX(int data[], int size)
 	shiftByteOut(SOT_Preamble);
 
 	int i = 0;
-	while (size > 0)
-	{
+	while (size > 0) {
 
 		int i;
-		for (i = 0; i < sizeof(int); i++)
-		{
+		for (i = 0; i < sizeof(int); i++) {
 			shiftByteOut(*(buff++));
 		}
-
+		
 		size--;
-
 	}
 
 	// End of Tx
